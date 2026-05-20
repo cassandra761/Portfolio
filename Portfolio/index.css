@@ -1,0 +1,170 @@
+/* Welcome.css */
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #d4e5c9;
+    height: 75px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+.headband {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: background 500ms ease, color 300ms ease;
+}
+
+/* Hover & active states */
+.headband:hover { 
+    background: #9ebd79; 
+    color: #f5f8f1; 
+}
+
+.headband.active {
+    background: #9ebd79;
+    color: #fff !important;
+}
+
+/* Header toggle button */
+.header-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: #ffffff;
+    color: #2c3e2c;
+    overflow: hidden;  /* Prevent scroll */
+}
+
+
+
+/*A modifier*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    color: #2c3e2c;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .highlight {
+    color: #9ebd79;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    background-color: #9ebd79;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9ebd79;
+    color: #fff;
+}
+
+
+
+/* Dark mode styles */
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark header {
+    background-color: #3a5a3a; /* couleur sombre du header */
+}
+
+body.dark .headband {
+    color: #fffbf7; /* texte du menu en crème */
+}
+
+body.dark .headband:hover {
+    background: #b8d699;
+    color: #2a3a2a;
+}
+
+header.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .hero {
+    color: #fffbf7; /* texte clair sur fond sombre */
+}
+
+body.dark .btn {
+    background-color: #9ebd79;
+    color: #ffffff;
+}
+
+body.dark .btn:hover {
+    background-color: #b8d699;
+    color: #ffffff;
+}
+body.dark {
+    background: #3a5a3a; /* fond sombre pour le corps */
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
