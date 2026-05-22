@@ -101,35 +101,6 @@ body.dark #theme-toggle {
     margin-bottom: 1rem;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  align-items: flex-start;
-}
-
-.profile-photo {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.about-text {
-  flex: 1;
-}
-
-/*logo-list*/
-
-.logo-list {
-  display: flex;
-  align-items: center;
-  gap: 5rem;           /* space between icons */
-  font-size: 1.5rem;     /* icon size */
-  list-style: none;
-}
-
 /*add aline*/
 .divider {
   height: 2px;
@@ -138,8 +109,6 @@ body.dark #theme-toggle {
   background: var(--white);
   border-radius: 2px;
 }
-
-
 
 /* logo.css */
 
@@ -150,6 +119,7 @@ body.dark #theme-toggle {
     align-items: center;
     color: var(--white);
     gap: 18rem;
+    font-size: 2rem;     /* icon size */
 }
 
 .hero h1 {
@@ -160,12 +130,6 @@ body.dark #theme-toggle {
 .hero h2 {
     font-size: 1.5rem;
     margin: 0.2rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;     /* icon size */
 }
 
 /* Default icon appearance */
@@ -201,6 +165,21 @@ body.dark #theme-toggle {
   max-width: 1500px;
   margin: 2rem auto;                 /* Centré sur la page */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lorient,
+.montaigu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Effet au survol */
