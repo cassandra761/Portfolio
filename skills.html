@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Comptétances</title>
+  <!-- A rajouter un logo -->
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="toggle_day_and_night.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="headband">Bienvenue</a>
+      <a href="skills.html" class="headband">Compétences</a>
+      <a href="project.html" class="headband">Projets</a>
+      <a href="techwatch.html" class="headband">Veille technologique</a>
+      <a href="contact.html" class="headband">Contact</a>
+
+      <div class="header-toggel">
+        <!-- Theme toggle -->
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle" id="darkmod-label"></label>
+      </div>
+    </div>
+  </header>
+
+  <!-- A modifier -->
+
+  <main>
+    <section id="skills" class="skills-section">
+      <h1>Mes Compétences</h1>
+      <p class="subtitle">Technologies et outils que j'utilise dans mes projets BTS SIO.</p>
+
+      <div class="skills-grid">
+        <!-- Bloc 1 -->
+        <div class="skill-card">
+          <h2>Langages de Programmation</h2>
+          <div class="skill" data-skill="95">HTML / CSS</div>
+          <div class="skill" data-skill="80">JavaScript</div>
+          <div class="skill" data-skill="75">PHP</div>
+          <div class="skill" data-skill="85">SQL</div>
+        </div>
+
+        <!-- Bloc 2 -->
+        <div class="skill-card">
+          <h2>Tools & Frameworks</h2>
+          <div class="skill" data-skill="90">Git / GitHub</div>
+          <div class="skill" data-skill="70">Laravel</div>
+          <div class="skill" data-skill="95">VS Code</div>
+          <div class="skill" data-skill="60">Figma</div>
+        </div>
+
+        <!-- Bloc 3 -->
+        <div class="skill-card">
+          <h2>Systems & Networks</h2>
+          <div class="skill" data-skill="80">Linux / Windows Server</div>
+          <div class="skill" data-skill="70">Virtualization (VMs)</div>
+          <div class="skill" data-skill="75">Network Configuration</div>
+          <div class="skill" data-skill="65">Cybersecurity Basics</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fin de a modifier  -->
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2026 Cassandra LONJON-SALIS. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="skills.js"></script>
+  <script src="toggle -  day and night.js"></script>
+</body>
+
+</html>
