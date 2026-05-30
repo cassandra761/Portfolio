@@ -1,0 +1,336 @@
+/* Project.css */
+
+:root {
+    --milk: #f1e8c7;
+    --blue: #a6c9eb;
+    --grey: #333333;
+    --white: #ffffff;
+    --black: #000000;
+    --red: #ff0000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--blue);
+    height: 75px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+.headband {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: background 500ms ease, color 300ms ease;
+}
+
+/* Hover & active states */
+.headband:hover { 
+    background: var(--milk); 
+    color: var(--blue); 
+}
+
+.headband.active {
+    background: var(--blue);
+    color: var(--white) !important;
+}
+
+/* Header toggle button */
+.header-toggle,
+.header-toggel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: auto;
+    padding-left: 8px;
+}
+
+/* Theme toggle button */
+#theme-toggle,
+#darkmode-toggle {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* General body styles */
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: var(--white);
+    color: var(--grey);
+}
+
+body.dark #theme-toggle,
+body.dark #darkmode-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+
+
+/*A modifier*/
+
+* {
+    box-sizing: border-box;
+}
+
+.demo {
+    flex: 1;
+    max-width: 820px;
+    margin: 6vh auto;
+    padding: 2rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+
+.folder {
+    width: 100%;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 0 6px 18px rgba(42, 58, 42, 0.06);
+    outline: none;
+    background: var(--blue);
+}
+
+.folder:focus {
+    box-shadow: 0 8px 24px rgb(158, 189, 121, 0.22), 0 0 0 4px rgba(158, 189, 121, 0.08);
+}
+
+
+.folder-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    background: var(--white);
+    border-radius: 10px;
+    transition: background 300ms ease;
+}
+
+.folder-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 1.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    color: var(--blue);
+}
+
+
+.folder-meta {
+    flex: 1;
+}
+
+.folder-name {
+    display: block;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.on-clic {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: background 500ms ease, color 300ms ease;
+}
+
+.folder-info {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--blue);
+}
+
+
+.chevron {
+    background: none;
+    border: 0;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-grid;
+    place-items: center;
+}
+
+.chevron svg {
+    width: 22px;
+    height: 22px;
+    transform-origin: center;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+}
+
+
+.file-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 380ms cubic-bezier(.2, .9, .2, 1), opacity 300ms ease, transform 300ms ease;
+    opacity: 0;
+    transform: translateY(-8px);
+}
+
+.file {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.08);
+    font-family: monospace;
+    color: var(--white);
+}
+
+/* Open state styles */
+.folder[data-open="true"] .file-list {
+    opacity: 1;
+    transform: none;
+    max-height: 400px;
+}
+
+.folder[data-open="true"] .chevron svg {
+    transform: rotate(180deg);
+}
+
+.folder[data-open="true"] .folder-icon {
+    filter: drop-shadow(0 6px 10px rgba(166, 201, 235, 0.8));
+    color: var(--blue);
+}
+
+
+/* nice little hover/active effects */
+.folder-header:hover {
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 10px;
+}
+
+.folder-header:hover .folder-name,
+.folder-header:hover .folder-info,
+.folder-header:hover .folder-icon {
+    color: var(--blue);
+}
+
+.file:hover {
+    background: linear-gradient(90deg, rgba(166, 201, 235, 0.08), rgba(166, 201, 235, 0.03));
+}
+
+
+.hint {
+    color: var(--white);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+
+@media (max-width:520px) {
+    .folder-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/*Dark mode styles*/
+
+body.dark header {
+    background-color: var(--blue); /* conserve header color in dark mode */
+}
+
+body.dark .headband {
+    color: var(--grey); /* texte du menu en crème */
+}
+
+body.dark .folder-header{
+    background: var(--grey);
+}
+
+body.dark .folder{
+    background: var(--blue);
+}
+
+body.dark .folder-name{
+    color: var(--blue);
+}
+
+body.dark h1{
+    color: var(--blue);
+}
+
+body.dark .on-clic{
+    color: var(--grey);
+}
+
+body.dark .folder-info{
+    color: var(--blue);
+}
+
+
+body.dark .folder:focus {
+    box-shadow: 0 8px 24px rgba(166,201,235,0.32), 0 0 0 4px rgba(166,201,235,0.16);
+}
+
+body.dark .folder-icon {
+    color: var(--blue);
+}
+
+body.dark .file {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 0.2rem;
+}
+
+body.dark footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--blue);
+    color: var(--grey);
+    text-align: center;
+    padding: 0.2rem;
+}

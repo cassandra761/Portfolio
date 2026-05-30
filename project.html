@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <!-- A rajouter un logo -->
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="toggle_day_and_night.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="headband">Bienvenue</a>
+            <a href="skills.html" class="headband">Compétences</a>
+            <a href="project.html" class="headband">Projets</a>
+            <a href="techwatch.html" class="headband">Veille technologique</a>
+            <a href="contact.html" class="headband">Contact</a>
+
+            <div class="header-toggel">
+                <!-- Theme toggle -->
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle" id="darkmod-label"></label>
+            </div>
+        </div>
+    </header>
+
+    <main class="demo">
+        <h1>Mes Projets</h1>
+
+        <div class="folder" data-open="false" tabindex="0" role="button" aria-expanded="false">
+            <div class="folder-header">
+                <!-- folder SVG icon -->
+                <svg class="folder-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V7z" />
+                    <path d="M3 10h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
+                </svg>
+                <div class="folder-meta">
+                    <span class="folder-name">Site web club de football</span>
+                    <span class="folder-info">Dans le cadre de mon BTS</span>
+                </div>
+                <button class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="file-list" aria-hidden="true">
+                <img src="AEM.png" alt="AEM site web football" width="100%">
+                <li class="file"><a href="https://github.com/cassandra761/Mini_Projet_AP" class="on-clic">Mini Projet
+                        AP</a></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="folder" data-open="false" tabindex="0" role="button" aria-expanded="false">
+            <div class="folder-header">
+                <!-- folder SVG icon -->
+                <svg class="folder-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V7z" />
+                    <path d="M3 10h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
+                </svg>
+                <div class="folder-meta">
+                    <span class="folder-name">Site web d'entreprise</span>
+                    <span class="folder-info">Dans le cadre de mon BTS</span>
+                </div>
+                <button class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="file-list" aria-hidden="true">
+                <img src="GSB.png" alt="GSB site web d'entreprise" width="100%">
+                <li class="file"><a href="https://github.com/cassandra761/Contexte_GSB" class="on-clic">Contexte GSB</a>
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="folder" data-open="false" tabindex="0" role="button" aria-expanded="false">
+            <div class="folder-header">
+                <!-- folder SVG icon -->
+                <svg class="folder-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V7z" />
+                    <path d="M3 10h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
+                </svg>
+                <div class="folder-meta">
+                    <span class="folder-name">Projet Agence56</span>
+                    <span class="folder-info">Dans le cadre de mon BTS</span>
+                </div>
+                <button class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="file-list" aria-hidden="true">
+                <img src="Agence56.png" alt="Agence56 site web" width="100%">
+                <li class="file"> <a
+                        href="https://1drv.ms/f/c/8fecc42ed24abe1d/IgDgdS_EMQ0dTKq2FgjzEG5-AdvybI14ujrUSY6c3IrJYeI?e=HI70Wd"
+                        class="on-clic">Projet Agence56</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2026 Cassandra LONJON-SALIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+    <script src="project.js"></script>
+    <script src="toggle_day_and_night.js"></script>
+</body>
+
+</html>
