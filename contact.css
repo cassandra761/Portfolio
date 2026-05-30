@@ -49,16 +49,20 @@ header {
     color: var(--blue); 
 }
 
-/* Header toggle button */
-.header-toggle {
+/* Header toggle button (supports both spellings) */
+.header-toggle,
+.header-toggel {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    margin-left: auto;
+    padding-left: 8px;
 }
 
-/* Theme toggle button */
-#theme-toggle {
+/* Theme toggle button (supports both IDs) */
+#theme-toggle,
+#darkmode-toggle {
     background: transparent;
     border: 1px solid rgba(0,0,0,0.08);
     padding: 6px 8px;
@@ -77,7 +81,8 @@ body {
     overflow: hidden;  /* Prevent scroll */
 }
 
-body.dark #theme-toggle {
+body.dark #theme-toggle,
+body.dark #darkmode-toggle {
     border-color: rgba(255,255,255,0.5);
 }
 
@@ -232,7 +237,8 @@ body.dark .headband:hover {
     color: var(--blue);
 }
 
-header.dark #theme-toggle {
+header.dark #theme-toggle,
+header.dark #darkmode-toggle {
     border-color: rgba(255,255,255,0.08);
 }
 
