@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Portfolio - Projects</title>
+    <!-- A rajouter un logo -->
+    <link rel="icon" href ="">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="toggle - day and night.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <a href="welcome.html" class="headband">Welcome</a>
+        <a href="about.html" class="headband">About</a>
+        <a href="project.html" class="headband">Project</a>
+        <a href="techwatch.html" class="headband">Tech watch</a>
+        <a href="contact.html" class="headband">Contact</a>
+        <a href="skills.html" class="headband">Skills</a>
+    
+        <div class="header-toggel">
+            <!-- Theme toggle -->
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle" id="darkmod-label"></label>
+        </div>
+    </div>
+</header>
+
+    <main class="demo">
+        <h1>My Projects</h1>
+
+
+        <div class="folder" data-open="false" tabindex="0" role="button" aria-expanded="false">
+            <div class="folder-header">
+                <!-- folder SVG icon -->
+                <svg class="folder-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V7z" />
+                    <path d="M3 10h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
+                </svg>
+
+
+                <div class="folder-meta">
+                    <span class="folder-name">My File</span>
+                    <span class="folder-info">4 fichiers</span>
+                </div>
+
+
+                <button class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <ul class="file-list" aria-hidden="true">
+                <img src="Ordinateur.png" alt="Ordinateur">
+                <li class="file"><a href="https://github.com/cassandra761/Mini_Projet_AP.html" class="on-clic">Mini Projet AP</a></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="folder" data-open="false" tabindex="0" role="button" aria-expanded="false">
+            <div class="folder-header">
+                <!-- folder SVG icon -->
+                <svg class="folder-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V7z" />
+                    <path d="M3 10h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
+                </svg>
+
+
+                <div class="folder-meta">
+                    <span class="folder-name">My File 2</span>
+                    <span class="folder-info">4 fichiers</span>
+                </div>
+
+
+                <button class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <ul class="file-list" aria-hidden="true">
+                <li class="file">index.html <span class="ext">.html</span></li>
+                <li class="file">styles.css <span class="ext">.css</span></li>
+                <li class="file">script.js <span class="ext">.js</span></li>
+                <li class="file">README.md <span class="ext">.md</span></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="folder" data-open="false" tabindex="0" role="button" aria-expanded="false">
+            <div class="folder-header">
+                <!-- folder SVG icon -->
+                <svg class="folder-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v1H3V7z" />
+                    <path d="M3 10h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
+                </svg>
+
+
+                <div class="folder-meta">
+                    <span class="folder-name">My File 3</span>
+                    <span class="folder-info">4 fichiers</span>
+                </div>
+
+
+                <button class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <ul class="file-list" aria-hidden="true">
+                <li class="file">index.html <span class="ext">.html</span></li>
+                <li class="file">styles.css <span class="ext">.css</span></li>
+                <li class="file">script.js <span class="ext">.js</span></li>
+                <li class="file">README.md <span class="ext">.md</span></li>
+            </ul>
+        </div>
+
+    </main>
+
+
+    <script src="project.js"></script>
+    <script src="toggle -  day and night.js"></script>
+</body>
+
+</html>

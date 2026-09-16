@@ -1,0 +1,36 @@
+
+{
+  "fr": {
+    "title": "Portfolio - Test",
+    "texte": "Bienvenue sur mon portfolio",
+    "intro": "Ceci est ma page d'accueil.",
+
+    "welcome": "Bienvenue",
+    "about": "À propos",
+    "path": "Parcours",
+    "projects": "Projets",
+    "techwatch": "Veille Techno",
+    "contact": "Contact",
+    "skills": "Compétences",
+    "test": "Test",
+    "home.btn": "Accueil"
+  },
+
+  "en": {
+    "title": "Portfolio - Test",
+    "texte": "Welcome to my portfolio",
+    "intro": "This is my homepage.",
+
+    "welcome": "Welcome",
+    "about": "About",
+    "path": "Path",
+    "projects": "Projects",
+    "techwatch": "Techwatch",
+    "contact": "Contact",
+    "skills": "Skills",
+    "test": "Test",
+    "home.btn": "Home"
+  }
+}
+
+

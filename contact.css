@@ -1,0 +1,297 @@
+/* Contact.css */
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #d4e5c9;
+  height: 75px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+
+.headband {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    color: #2c3e2c;
+/* Hover & active states */
+.headband:hover {
+    background: #9ebd79;
+    color: #f5f8f1;
+
+.headband.active {
+  background: #9ebd79;
+  color: #fff !important;
+}
+
+/* Header toggle button */
+.header-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* General body styles */
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  color: #2c3e2c;
+  overflow: hidden;
+  /* Prevent scroll */
+}
+
+body.dark #theme-toggle {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+
+
+/* A mofifier */
+
+/* --- CONTACT PAGE (avec cadres blancs) --- */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #9ebd79;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #9ebd79;
+  margin-bottom: 2rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === Cadres blancs pour les deux blocs === */
+.contact-card,
+.contact-form {
+  flex: 1 1 400px;
+  background: #ffffff;
+  /* cadre blanc */
+  color: #2c3e2c;
+  /* texte sombre pour bon contraste */
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(42, 58, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol : légère élévation */
+.contact-card:hover,
+.contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form .form-group {
+  width: 100%;
+  /* s'assure que chaque form-group prend toute la largeur du conteneur */
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2c3e2c;
+  font-size: 1rem;
+  transition: border 0.3s, background 0.3s;
+  box-sizing: border-box;
+  resize: none;
+  /* Empêche le redimensionnement */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #9ebd79;
+  background: #ffffff;
+}
+
+/* Titres des blocs */
+.contact-card h2,
+.contact-form h2 {
+  margin-bottom: 1.5rem;
+  color: #9ebd79;
+}
+
+/* Texte et liens */
+.contact-card p {
+  margin: 0.5rem 0;
+}
+
+.contact-card a {
+  color: #9ebd79;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Liens sociaux */
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  color: #9ebd79;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #b8d699;
+}
+
+/* Formulaire */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2c3e2c;
+  font-size: 1rem;
+  transition: border 0.3s, background 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #9ebd79;
+  background: #ffffff;
+}
+
+/* Bouton d'envoi */
+.btn {
+  background: #9ebd79;
+  color: #f5f8f1;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #b8d699;
+  color: #ffffff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-card,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* Dark mode styles */
+
+body.dark header {
+  background-color: #3a5a3a;
+}
+
+body.dark .headband {
+  color: #fffbf7;
+}
+
+body.dark .headband:hover {
+  background: #b8d699;
+  color: #2a3a2a;
+}
+
+body.dark .contact-card,
+body.dark .contact-form {
+  background: #4a6a4a;
+  color: #fffbf7;
+}
+
+body.dark .contact-section h1 {
+  color: #b8d699;
+}
+
+body.dark .subtitle {
+  color: #fffbf7;
+}
+
+
+body.dark input,
+body.dark .contact-form textarea {
+  background: #5a7a5a;
+  color: #fffbf7;
+  border-color: #7a9a7a;
+  resize: none;
+  /* Empêche aussi en dark mode */
+}
+
+body.dark .btn {
+  background: #9ebd79;
+  color: #0f1f0f;
+}
+
+body.dark .btn:hover {
+  background: #fffbf7;
+  color: #0f1f0f;
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Techwatch</title>
+    <link rel="stylesheet" href="techwatch.css" />
+    <link rel="stylesheet" href="toggle - day and night.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="welcome.html" class="headband">Welcome</a>
+            <a href="about.html" class="headband">About</a>
+            <a href="project.html" class="headband">Project</a>
+            <a href="techwatch.html" class="headband">Tech watch</a>
+            <a href="contact.html" class="headband">Contact</a>
+            <a href="skills.html" class="headband">Skills</a>
+
+            <div class="header-toggel">
+                <!-- Theme toggle -->
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle" id="darkmod-label"></label>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+
+        <main class="cards">
+            <!-- 6 cartes d'exemple -->
+            <div class="card is-collapsed">
+                <div class="card__inner js-expander">
+                    <!-- Modifier le nom si besoin -->
+                    <span>Tech watch 1</span>
+                    <i class="bi bi-hdd-stack icon"></i>
+                </div>
+                <div class="card__expander">
+                    <button class="js-collapser" aria-label="Fermer">✕</button>
+                    <!-- A modifier si besoin -->
+                    <p>Contenu étendu de la carte 1.</p>
+                </div>
+            </div>
+
+            <div class="card is-collapsed">
+                <div class="card__inner js-expander">
+                    <span>Tech watch 2</span>
+                    <i class="bi bi-hdd-stack icon"></i>
+                </div>
+                <div class="card__expander">
+                    <button class="js-collapser" aria-label="Fermer">✕</button>
+                    <p>Contenu étendu de la carte 2.</p>
+                </div>
+            </div>
+
+            <div class="card is-collapsed">
+                <div class="card__inner js-expander">
+                    <span>Tech watch 3</span>
+                    <i class="bi bi-hdd-stack icon"></i>
+                </div>
+                <div class="card__expander">
+                    <button class="js-collapser" aria-label="Fermer">✕</button>
+                    <p>Contenu étendu de la carte 3.</p>
+                </div>
+            </div>
+
+            <div class="card is-collapsed">
+                <div class="card__inner js-expander">
+                    <span>Tech watch 4</span>
+                    <i class="bi bi-hdd-stack icon"></i>
+                </div>
+                <div class="card__expander">
+                    <button class="js-collapser" aria-label="Fermer">✕</button>
+                    <p>Contenu étendu de la carte 4.</p>
+                </div>
+            </div>
+
+            <div class="card is-collapsed">
+                <div class="card__inner js-expander">
+                    <span>Tech watch 5</span>
+                    <i class="bi bi-hdd-stack icon"></i>
+                </div>
+                <div class="card__expander">
+                    <button class="js-collapser" aria-label="Fermer">✕</button>
+                    <p>Contenu étendu de la carte 5.</p>
+                </div>
+            </div>
+
+            <div class="card is-collapsed">
+                <div class="card__inner js-expander">
+                    <span>Tech watch 6</span>
+                    <i class="bi bi-hdd-stack icon"></i>
+                </div>
+                <div class="card__expander">
+                    <button class="js-collapser" aria-label="Fermer">✕</button>
+                    <p>Contenu étendu de la carte 6.</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="techwatch.js"></script>
+    <script src="toggle -  day and night.js"></script>
+</body>
+
+</html>

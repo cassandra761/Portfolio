@@ -1,0 +1,229 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #d4e5c9;
+    height: 75px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+.headband {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: background 500ms ease, color 300ms ease;
+}
+
+/* Hover & active states */
+.headband:hover {
+    background: #9ebd79;
+    color: #f5f8f1;
+}
+
+.headband.active {
+    background: #9ebd79;
+    color: #fff !important;
+}
+
+/* Header toggle button */
+.header-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #2c3e2c;
+}
+
+.wrapper {
+    max-width: 1000px;
+    min-height:50%;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(42, 58, 42, 0.06);
+    border-radius: 16px;
+    overflow: visible;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px;
+}
+
+/* carte de base */
+.card {
+    width: calc((100% / 3) - 30px);
+    margin: 0;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    .card {
+        width: calc((100% / 2) - 30px);
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card__inner {
+    background: #e8e8e8;
+    color: #2c3e2c;
+    padding: 28px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+    position: relative;
+}
+
+.card__inner .icon {
+    font-size: 50px;  /* remplace width/height pour <i> */
+    margin-top: 10px;
+    color: currentColor; /* pour que la couleur suive le texte */
+    opacity: .95;
+    display: block; /* pour centrer sous le texte */
+}
+
+
+.card__inner:hover {
+    transform: scale(1.03);
+    background: #9ebd79;
+}
+
+/* expander (caché par défaut) */
+.card__expander {
+    background: #9ebd79;
+    color: #2c3e2c;
+    margin-top: 12px;
+    border-radius: 16px;
+    padding: 18px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .35s ease, opacity .35s ease, transform .25s ease;
+    position: relative;
+}
+
+/* bouton fermer */
+.card__expander .js-collapser {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* états */
+.card.is-expanded .card__expander {
+    max-height: 300px;
+    /* assez grand pour le contenu */
+    opacity: 1;
+}
+
+.card.is-inactive .card__inner {
+    opacity: 0.45;
+    pointer-events: none;
+    transform: scale(1);
+}
+
+/*Dark mode styles */
+
+body.dark header {
+    background-color: #3a5a3a; /* couleur sombre du header */
+}
+
+body.dark .headband {
+    color: #fffbf7; /* texte du menu en crème */
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .wrapper {
+    background: #4a6a4a;
+    box-shadow: 0 4px 10px rgba(42, 58, 42, 0.2);
+}
+
+body.dark .card__inner {
+    background: #5a7a5a;
+    color: #fffbf7;
+}
+
+body.dark .card__inner:hover {
+    background: #9ebd79;
+    color: #ffffff;
+}
+
+body.dark .card__expander {
+    background: #9ebd79;
+    color: #ffffff;
+}
+
+body.dark #theme-toggle {
+    border-color: rgba(255,255,255,0.08);
+}
+
+#theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
