@@ -1,89 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Welcome</title>
+    <title>Portfolio - Accueil</title>
     <link rel="icon" href="">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="toggle - day and night.css">
+    <link rel="stylesheet" href="toggle_day_and_night.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
 </head>
 
 <body>
-
     <header>
         <div class="container">
-            <a href="index.html" class="headband">Welcome</a>
-            <a href="about.html" class="headband">About</a>
-            <a href="project.html" class="headband">Projects</a>
-            <a href="techwatch.html" class="headband">Tech watch</a>
+            <a href="index.html" class="headband">Accueil</a>
+            <a href="skills.html" class="headband">Compétences</a>
+            <a href="project.html" class="headband">Projets</a>
+            <a href="techwatch.html" class="headband">Veille</a>
             <a href="contact.html" class="headband">Contact</a>
-            <a href="skills.html" class="headband">Skills</a>
 
             <div class="header-toggel">
-                <!-- Theme toggle -->
                 <input type="checkbox" id="darkmode-toggle">
                 <label for="darkmode-toggle" id="darkmod-label"></label>
             </div>
         </div>
     </header>
 
-    <section id="welcome" class="hero">
-        <div class="hero-content">
-            <h1>Cassandra Portfolio</h1>
-            <h2>Profile</h2>
+    <main class="hero">
+        <section id="welcome" class="hero-content">
+            <h1>Cassandra LONJON-SALIS</h1>
+            <h2>Profil</h2>
             <p>
-                A student in a two-year technical degree program in IT services, passionate about web development, curious and independent, I enjoy learning about modern tech stacks and adapting quickly to new technical environments.
-            </p> 
-            <p>
-                I'm a student in <strong>BTS SIO - SLAM (Software Solutions and Business Applications)</strong> 
-                at Saint-Louis La Paix in Lorient. I design, develop, and maintain web and software solutions.
+                Étudiante en BTS SIO - SLAM, passionnée par le développement web, curieuse et autonome, j’aime apprendre les technologies actuelles et m’adapter rapidement à de nouveaux environnements techniques.
             </p>
             <p>
-                On this portfolio, you can discover my projects, my technical skills, 
-                and my professional experiences in the IT field.
+                Je conçois, développe et maintiens des solutions web et logicielles au sein de l’environnement <strong>Saint-Louis La Paix</strong> à Lorient.
+            </p>
+            <p>
+                Ce portfolio présente mes projets, mes compétences et mon parcours professionnel dans le domaine informatique.
             </p>
 
-            <h2>Education</h2>
+            <h2>Formation</h2>
             <p>
-                <strong>Stage Informatique </strong> | Saint Carlo Acutis, Montaigu-Vendée (mai-juin 2026)
-                <strong>BTS SIO - SLAM</strong> | Saint-Louis La Paix, Lorient (2025–2027)
-                <br>
-                <strong>BAC Général</strong> | Saint-Louis La Paix, Lorient (2021–2025)
-                <br>
-                <strong>BIA (Brevet d'Initiation à l'Aéronotique)</strong> | Lorient (2021)
+                <strong>Stage Informatique</strong> | Saint Carlo Acutis, Montaigu-Vendée (mai-juin 2026)<br>
+                <strong>BTS SIO - SLAM</strong> | Saint-Louis La Paix, Lorient (2025–2027)<br>
+                <strong>BAC Général</strong> | Saint-Louis La Paix, Lorient (2021–2025)<br>
+                <strong>BIA (Brevet d’Initiation à l’Aéronotique)</strong> | Lorient (2021)
             </p>
 
-            <h2>Experience</h2>
+            <h2>Expérience</h2>
             <p>
-                <strong>Stage à l'ensemble scolaire Saint Carlo Acutis </strong> | [Montaigu-Vendée] (2026)
+                <strong>Stage à l’ensemble scolaire Saint Carlo Acutis</strong> | Montaigu-Vendée (2026)
                 <br>
-                - Projet de serveur d'affichage dynamique
+                - Projet de serveur d’affichage dynamique<br>
+                - Projet de création d’un serveur test FOG<br>
+                - Campagne de sensibilisation à la cybersécurité<br>
+                - Création d’une application / site pour une caisse enregistreuse
+            </p>
+            <p>
+                <strong>Stage chez [Agence AA]</strong> | Montaigu (2024)
                 <br>
-                - Prjet de création d'un serveur test FOG
-                <br>
-                - Projet Campagne de sensibilisation à la cybersécurité
-                <br>
-                - Création d'une application / site pour une caisse enregistreuse
+                - Développement d’une application web pour la gestion de stock<br>
+                - Collaboration avec une équipe de développeurs pour la mise en place de nouvelles fonctionnalités
             </p>
 
-            <p>
-                <strong>Internship at [Agence AA]</strong> | [Montaigu] (2024)
-                <br>
-                - Developed a web application to manage inventory using [Technologies Used].
-                <br>
-                - Collaborated with a team of developers to implement new features and fix bugs.
-            </p>
-            <a href="about.html" class="btn">Learn More About Me</a>
-            <a href="projects.html" class="btn">See My Projects</a>
-        </div>
-    </section>
+            <div class="btn-group">
+                <a href="skills.html" class="btn">Découvrir mes compétences</a>
+                <a href="project.html" class="btn">Voir mes projets</a>
+            </div>
+        </section>
+    </main>
 
-    <script src="welcome.js"></script>
-    <script src="toggle -  day and night.js"></script>
+    <script src="index.js"></script>
+    <script src="toggle_day_and_night.js"></script>
 </body>
 
 </html>

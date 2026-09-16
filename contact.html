@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Contact</title>
+    <title>Portfolio - Bienvenue</title>
     <!-- A rajouter un logo -->
     <link rel="icon" href="">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="toggle - day and night.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="toggle_day_and_night.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
@@ -18,12 +18,11 @@
 
     <header>
         <div class="container">
-            <a href="welcome.html" class="headband">Welcome</a>
-            <a href="about.html" class="headband">About</a>
-            <a href="project.html" class="headband">Project</a>
-            <a href="techwatch.html" class="headband">Tech watch</a>
+            <a href="index.html" class="headband">Bienvenue</a>
+            <a href="skills.html" class="headband">Compétences</a>
+            <a href="project.html" class="headband">Projets</a>
+            <a href="techwatch.html" class="headband">Veille technologique</a>
             <a href="contact.html" class="headband">Contact</a>
-            <a href="skills.html" class="headband">Skills</a>
 
             <div class="header-toggel">
                 <!-- Theme toggle -->
@@ -35,40 +34,54 @@
 
     <!-- A modifier -->
 
-    <main>
-        <section id="contact" class="contact-section">
-            <h1>Get in Touch</h1>
-            <p class="subtitle">Interested in my profile or projects? Let's connect!</p>
+    <section id="about" class="hero">
+        <div class="about-card">
+            <h1>Cassandra LONJON-SALIS</h1>
+            <h3><strong>Prénom :</strong> Cassandra Lonjon-Salis</h3>
+            <h3><strong>Mail :</strong> <a href="mailto:cassandralonjonsalis@gmail.com">cassandra.lonjonsalis@gmail.com</a></h3>
+            <h3><strong>Téléphone:</strong> <a href="tel:+33 7 49 03 94 56">+33 7 49 03 94 56</a></h3>
 
-            <div class="contact-wrapper">
-                <!-- Bloc gauche : informations -->
-                <div class="contact-card">
-                    <h2>Contact Information</h2>
-                    <p><strong>Name:</strong> Cassandra Lonjon-Salis</p>
-                    <p><strong>Email:</strong> <a href="mailto:cassandralonjonsalis@gmail.com">cassandra.lonjonsalis@gmail.com</a></p>
-                    <p><strong>Phone:</strong> +33 7 49 03 94 56</p>
-                    <p><strong>Location:</strong> Lorient, France</p>
+            <div class="divider"></div>
+            <h3><strong>Location:</strong></h3>
 
-                    <div class="social-links">
-                        <a href="www.linkedin.com/in/cassandra-lonjon-salis-332a1238a" target="_blank"
-                            aria-label="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/cassandra761?tab=overview&from=2025-10-01&to=2025-10-28"
-                            target="_blank" aria-label="GitHub">
-                            <i class="bi bi-github"></i>
-                        </a>
-                        <a href="assets/pdf/CV.pdf" target="_blank">CV (PDF)</a>
-                    </div>
+            <div class="location">
+                <div class="lorient">
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27748.68376081221!2d-3.4004478703620094!3d47.74940246238858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105e56aa6609ed%3A0xa93367770ccde4ea!2s56100%20Lorient!5e1!3m2!1sfr!2sfr!4v1779456613286!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+
+
+            <div class="divider"></div>
+
+            <div class="logo">
+                <a href="https://github.com/cassandra761" target="_blank" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/cassandra-lonjon-salis-332a1238a" target="_blank"
+                    aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:cassandralonjonsalis@gmail.com" target="_blank" aria-label="Email">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Fin de a modifier  -->
 
-    <script src="contact.js"></script>
-    <script src="toggle -  day and night.js"></script>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2026 Cassandra LONJON-SALIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="toggle_day_and_night.js"></script>
 </body>
 
 </html>

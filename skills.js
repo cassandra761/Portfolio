@@ -1,7 +1,7 @@
 // mark active nav link
 (function markActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'skills.html';
-  document.querySelectorAll('.site-nav a.headband').forEach(a => {
+  document.querySelectorAll('header a.headband').forEach(a => {
     const href = a.getAttribute('href');
     if (!href) return;
     if (href === path) { a.classList.add('active'); a.setAttribute('aria-current','page'); }
@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const progress = document.createElement("div");
     progress.classList.add("progress");
     progress.style.width = "0%";
-    progress.style.height = "100%";
-    progress.style.background = "var(--accent-color)";
-    progress.style.borderRadius = "8px";
     progress.style.transition = "width 1.2s ease";
 
     bar.appendChild(progress);

@@ -1,10 +1,19 @@
 /* Header */
+:root
+{
+    --milk: #f1e8c7;
+    --blue: #a6c9eb;
+    --grey: #333333;
+    --white: #ffffff;
+    --black: #000000;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #d4e5c9;
+    background-color: var(--blue);
     height: 75px;
     width: 100%;
     padding: 0 20px;
@@ -26,54 +35,54 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
     padding: 10px 0;
     border-radius: 20px;
     transition: background 500ms ease, color 300ms ease;
 }
 
-/* Hover & active states */
+/* Hover */
 .headband:hover {
-    background: #9ebd79;
-    color: #f5f8f1;
+    background: var(--milk);
+    color: var(--blue);
 }
 
-.headband.active {
-    background: #9ebd79;
-    color: #fff !important;
-}
-
-/* Header toggle button */
-.header-toggle {
+/* Header toggle button (supports both spellings) */
+.header-toggle,
+.header-toggel {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    margin-left: auto;
+    padding-left: 8px;
 }
 
-/* Theme toggle button */
-#theme-toggle {
+/* Theme toggle button (supports both IDs) */
+#theme-toggle,
+#darkmode-toggle {
     background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0,0,0,0.08);
     padding: 6px 8px;
     border-radius: 6px;
     cursor: pointer;
 }
 
-
-
-
-* {
-    box-sizing: border-box;
+/* General body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--white);
+    overflow: hidden;  /* Prevent scroll */
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #2c3e2c;
+body.dark #theme-toggle,
+body.dark #darkmode-toggle {
+    border-color: rgba(255,255,255,0.5);
 }
 
 .wrapper {
@@ -81,8 +90,8 @@ html, body {
     min-height:50%;
     margin: 4rem auto;
     padding: 2rem;
-    background: #ffffff;
-    box-shadow: 0 4px 10px rgba(42, 58, 42, 0.06);
+    background: var(--blue);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 16px;
     overflow: visible;
 }
@@ -116,8 +125,8 @@ html, body {
 }
 
 .card__inner {
-    background: #e8e8e8;
-    color: #2c3e2c;
+    background: var(--white);
+    color: var(--blue);
     padding: 28px;
     border-radius: 16px;
     text-align: center;
@@ -137,13 +146,13 @@ html, body {
 
 .card__inner:hover {
     transform: scale(1.03);
-    background: #9ebd79;
+    background: var(--milk);
 }
 
 /* expander (caché par défaut) */
 .card__expander {
-    background: #9ebd79;
-    color: #2c3e2c;
+    background: var(--milk);
+    color: var(--blue);
     margin-top: 12px;
     border-radius: 16px;
     padding: 18px;
@@ -161,7 +170,7 @@ html, body {
     top: 8px;
     border: none;
     background: transparent;
-    color: #fff;
+    color: var(--blue);
     font-size: 18px;
     cursor: pointer;
 }
@@ -182,11 +191,11 @@ html, body {
 /*Dark mode styles */
 
 body.dark header {
-    background-color: #3a5a3a; /* couleur sombre du header */
+    background-color: var(--blue); /* couleur sombre du header */
 }
 
 body.dark .headband {
-    color: #fffbf7; /* texte du menu en crème */
+    color: var(--grey); /* texte du menu en crème */
 }
 
 body.dark #theme-toggle {
@@ -194,23 +203,23 @@ body.dark #theme-toggle {
 }
 
 body.dark .wrapper {
-    background: #4a6a4a;
+    background: var(--blue);
     box-shadow: 0 4px 10px rgba(42, 58, 42, 0.2);
 }
 
 body.dark .card__inner {
-    background: #5a7a5a;
-    color: #fffbf7;
+    background: var(--grey);
+    color: var(--blue);
 }
 
 body.dark .card__inner:hover {
-    background: #9ebd79;
-    color: #ffffff;
+    background: var(--grey);
+    color: var(--blue);
 }
 
 body.dark .card__expander {
-    background: #9ebd79;
-    color: #ffffff;
+    background: var(--grey);
+    color: var(--blue);
 }
 
 body.dark #theme-toggle {
@@ -223,6 +232,16 @@ body.dark #theme-toggle {
     padding: 6px 8px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 0.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 
